@@ -37,42 +37,41 @@ mastodon_link                             :
 
 # Feature List 
 features:
-  - title: 🖼️ Smart Photo Cleaner
+  - title: Smart Photo Cleaner
     description: Automatically detects and helps remove duplicate or similar photos to free up storage.
     fontawesome_icon_name: image
 
-  - title: 🎥 Video Deduplicator
+  - title: Video Deduplicator
     description: Finds identical or oversized videos that you may have forgotten about.
     fontawesome_icon_name: film
 
-  - title: 👥 Contact Merger
+  - title: Contact Merger
     description: Cleans up your address book by merging duplicate contacts with one tap.
     fontawesome_icon_name: address-book
 
-  - title: 📅 Calendar Organizer
+  - title: Calendar Organizer
     description: Spots duplicate or spammy calendar events and helps you remove them safely.
     fontawesome_icon_name: calendar-alt
 
-  - title: ⚡ Built-in Speed Test
+  - title: Built-in Speed Test
     description: Instantly test your internet connection speed right inside the app.
     fontawesome_icon_name: tachometer-alt
 
-  - title: 📊 Storage Insights
+  - title: Storage Insights
     description: Get a clear overview of what's taking up space on your device.
     fontawesome_icon_name: chart-pie
 
-  - title: 🧠 AI Suggestions
+  - title: AI Suggestions
     description: Smart, on-device suggestions that recommend safe cleanups without deleting anything important.
     fontawesome_icon_name: magic
 
-  - title: 🌙 Auto-Cleanup Reminders
+  - title: Auto-Cleanup Reminders
     description: Schedule regular scans to keep your device light, clean, and fast.
     fontawesome_icon_name: clock
 
-  - title: 🔒 Private by Design
+  - title: Private by Design
     description: Everything runs on-device — no data leaves your phone, ever.
     fontawesome_icon_name: lock
-
 
 
 # Theme Settings
