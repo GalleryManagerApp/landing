@@ -5,9 +5,9 @@ include_in_header: true
 
 # Terms of Use
 
-**Last updated:** June 24, 2025
+**Last updated:** June 20, 2026
 
-Welcome to our app. Please read these Terms of Use ("Terms") carefully before using the app provided by **[Your App Name]** ("we", "us", or "our"). By downloading, accessing, or using the app, you agree to be bound by these Terms.
+Welcome to **Gallery Manager**. Please read these Terms of Use ("Terms") carefully before using the app provided by us ("we", "us", or "our"). By downloading, accessing, or using the app, you agree to be bound by these Terms.
 
 If you do not agree to these Terms, do not use the app.
 
@@ -35,7 +35,7 @@ You agree not to:
 
 ## 3. Intellectual Property
 
-All content, trademarks, and data in the app, including but not limited to software, text, graphics, and logos are the property of **[Your Company Name]** or its licensors and are protected by applicable laws.
+All content, trademarks, and data in the app, including but not limited to software, text, graphics, and logos are the property of Gallery Manager or its licensors and are protected by applicable laws.
 
 ---
 
@@ -61,4 +61,4 @@ We may update these Terms from time to time. Continued use of the app after such
 
 If you have any questions about these Terms, please contact us at:
 
-**[gallerymanagerapp@gmail.com]**
+**[gallerymanagerapp@gmail.com](mailto:gallerymanagerapp@gmail.com)**
