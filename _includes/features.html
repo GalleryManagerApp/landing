@@ -1,6 +1,7 @@
 <div class="features">
 
-    {% for feature in site.features %}
+    {% assign lang = page.lang | default: site.default_lang %}
+    {% for feature in site.data.i18n.strings[lang].features %}
 
     {% if feature.title %}
     <div class="feature">

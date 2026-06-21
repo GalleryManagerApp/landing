@@ -1,6 +1,9 @@
 ---
+layout: page
 title: "Terms of Use"
 include_in_header: true
+lang: en
+ref: terms_of_use
 ---
 
 # Terms of Use

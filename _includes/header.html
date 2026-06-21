@@ -1,3 +1,6 @@
+{% assign current_lang = page.lang | default: site.default_lang %}
+{% if current_lang == site.default_lang %}{% assign lang_base = '' %}{% else %}{% assign lang_base = current_lang | prepend: '/' %}{% endif %}
+{% assign lang_home = lang_base | append: '/' %}
 <header>
 	<div class="logo">
 		<div class="appIconShadow">
@@ -8,8 +11,8 @@
 					</clipPath>
 				</defs>
 			</svg>
-			{% if page.url != '/' %}
-				<a href="../" target="_self"><img class="headerIcon" src="{{ site.app_icon | relative_url }}"></a>
+			{% if page.ref != 'home' %}
+				<a href="{{ lang_home | relative_url }}" target="_self"><img class="headerIcon" src="{{ site.app_icon | relative_url }}"></a>
 			{% else %}
 				<img class="headerIcon" src="{{ site.app_icon | relative_url }}">
 			{% endif %}
@@ -19,13 +22,26 @@
 	</div>
 	<nav class="scroll">
 		<ul>
-			{% for page in site.pages %}
-				{% if page.include_in_header == true %}
-				<li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
+			{% for p in site.pages %}
+				{% if p.include_in_header == true and p.lang == current_lang %}
+				<li><a href="{{ p.url | relative_url }}" target="_self">{{ p.title }}</a></li>
 				{% endif %}
 			{% endfor %}
 			{% if site.presskit_download_link %}
-				<li><a href="{{ site.presskit_download_link }}">Press Kit</a></li>
+				<li><a href="{{ site.presskit_download_link }}">{{ site.data.i18n.strings[current_lang].press_kit }}</a></li>
+			{% endif %}
+			{% if site.data.i18n.languages.size > 1 %}
+				{% for l in site.data.i18n.languages %}
+					{% if l.code == site.default_lang %}{% assign base = '' %}{% else %}{% assign base = l.code | prepend: '/' %}{% endif %}
+					{% if page.ref == 'home' %}{% assign target = base | append: '/' %}{% else %}{% assign target = base | append: '/' | append: page.ref | append: '/' %}{% endif %}
+					<li class="langSwitch{% if forloop.first %} langSwitchFirst{% endif %}">
+						{% if l.code == current_lang %}
+							<span class="langCurrent">{{ l.label }}</span>
+						{% else %}
+							<a href="{{ target | relative_url }}" target="_self">{{ l.label }}</a>
+						{% endif %}
+					</li>
+				{% endfor %}
 			{% endif %}
 		</ul>
 	</nav>

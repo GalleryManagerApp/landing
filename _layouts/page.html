@@ -1,9 +1,10 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
-
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n.strings[lang] %}
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="{{ t.html_lang }}">
 
 {% include head.html %}
 

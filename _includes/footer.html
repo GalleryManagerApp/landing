@@ -78,11 +78,14 @@
 
 	</div>
 	<div class="footerLinks">
-		{% for page in site.pages %}
-			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
+		{% assign current_lang = page.lang | default: site.default_lang %}
+		{% for p in site.pages %}
+			{% if p.lang == current_lang %}
+				<a href="{{ p.url | relative_url }}" target="_self">{{ p.title }}</a>
+			{% endif %}
 		{% endfor %}
 		{% if site.presskit_download_link %}
-			<a href="{{ site.presskit_download_link }}">Press Kit</a>
+			<a href="{{ site.presskit_download_link }}">{{ site.data.i18n.strings[current_lang].press_kit }}</a>
 		{% endif %}
 	</div>
 </footer>

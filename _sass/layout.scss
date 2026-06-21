@@ -222,6 +222,34 @@ nav > ul li a:active {
 }
 
 
+// Language Switcher
+nav > ul li.langSwitchFirst {
+	margin-left: 15px;
+	padding-left: 30px;
+	border-left: 1px solid rgba($header-title-color, 0.25);
+}
+
+@media only screen and (max-width: 768px) {
+	nav > ul li.langSwitchFirst {
+		margin-left: 10px;
+		padding-left: 20px;
+	}
+}
+
+nav > ul li.langSwitch .langCurrent {
+	color: rgba($header-title-color, 1);
+	font-weight: bold;
+}
+
+.subPageHeaderBackground nav > ul li.langSwitchFirst {
+	border-left-color: rgba(#000, 0.2);
+}
+
+.subPageHeaderBackground nav > ul li.langSwitch .langCurrent {
+	color: rgba(#000, 1);
+}
+
+
 
 // Sub Page Header Styling
 .subPageHeaderBackground .logo > p {

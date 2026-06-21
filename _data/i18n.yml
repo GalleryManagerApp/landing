@@ -1,0 +1,83 @@
+# =====================================================================
+# Localization data.
+#
+# To add a new language:
+#   1. Add an entry under `languages` (code = URL prefix and folder name).
+#   2. Add a matching block under `strings.<code>`.
+#   3. Create `<code>/index.html` and `_pages/<code>/*.md` translations.
+# The default language (see `default_lang` in _config.yml) lives at the
+# site root with no URL prefix; every other language lives under /<code>/.
+# =====================================================================
+
+languages:
+  - code: en
+    label: English
+  - code: ru
+    label: Русский
+
+strings:
+  en:
+    html_lang: en-us
+    press_kit: Press Kit
+    app_description: "Optimise your phone's storage!"
+    features:
+      - title: Smart Photo Cleaner
+        description: Automatically detects and helps remove duplicate or similar photos to free up storage.
+        fontawesome_icon_name: image
+      - title: Video Deduplicator
+        description: Finds identical or oversized videos that you may have forgotten about.
+        fontawesome_icon_name: film
+      - title: Contact Merger
+        description: Cleans up your address book by merging duplicate contacts with one tap.
+        fontawesome_icon_name: address-book
+      - title: Calendar Organizer
+        description: Spots duplicate or spammy calendar events and helps you remove them safely.
+        fontawesome_icon_name: calendar-alt
+      - title: Built-in Speed Test
+        description: Instantly test your internet connection speed right inside the app.
+        fontawesome_icon_name: tachometer-alt
+      - title: Storage Insights
+        description: Get a clear overview of what's taking up space on your device.
+        fontawesome_icon_name: chart-pie
+      - title: AI Suggestions
+        description: Smart, on-device suggestions that recommend safe cleanups without deleting anything important.
+        fontawesome_icon_name: magic
+      - title: Auto-Cleanup Reminders
+        description: Schedule regular scans to keep your device light, clean, and fast.
+        fontawesome_icon_name: clock
+      - title: Private by Design
+        description: Everything runs on-device — no data leaves your phone, ever.
+        fontawesome_icon_name: lock
+
+  ru:
+    html_lang: ru-ru
+    press_kit: Пресс-кит
+    app_description: "Наведите порядок в памяти телефона!"
+    features:
+      - title: Умная очистка фото
+        description: Автоматически находит дубликаты и похожие фото и помогает удалить их, освобождая память.
+        fontawesome_icon_name: image
+      - title: Поиск дублей видео
+        description: Находит одинаковые и тяжёлые видео, о которых вы могли забыть.
+        fontawesome_icon_name: film
+      - title: Объединение контактов
+        description: Наводит порядок в адресной книге, объединяя дубликаты контактов в один тап.
+        fontawesome_icon_name: address-book
+      - title: Порядок в календаре
+        description: Находит дубликаты и спам-события в календаре и помогает безопасно их удалить.
+        fontawesome_icon_name: calendar-alt
+      - title: Тест скорости интернета
+        description: Мгновенно проверяйте скорость интернет-соединения прямо в приложении.
+        fontawesome_icon_name: tachometer-alt
+      - title: Анализ памяти
+        description: Наглядно показывает, что занимает место на вашем устройстве.
+        fontawesome_icon_name: chart-pie
+      - title: ИИ-подсказки
+        description: Умные подсказки на устройстве предлагают безопасную очистку, не удаляя ничего важного.
+        fontawesome_icon_name: magic
+      - title: Напоминания об очистке
+        description: Запланируйте регулярные проверки, чтобы устройство оставалось лёгким, чистым и быстрым.
+        fontawesome_icon_name: clock
+      - title: Приватность по умолчанию
+        description: Всё работает на устройстве — данные никогда не покидают ваш телефон.
+        fontawesome_icon_name: lock
